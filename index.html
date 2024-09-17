@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume by Uyoon Alam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container" id="Resume">
+        <h1>Shareable Resume Builder</h1>
+        <fieldset>
+            <legend><h2>Personal Information</h2></legend>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input class="info" type="text" id="username" placeholder="Your Username" required>
+
+                <label for="name">Name</label>
+                <input class="info" type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="info" type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input class="info" type="tel" id="phone" placeholder="Your Phone Number" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Educational Information</h2></legend>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea id="education" placeholder="Enter Educational Information" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Skills</h2></legend>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" placeholder="Enter Skills" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Work Experience</h2></legend>
+            <div class="form-group">
+                <label for="work-experience">Work Experience</label>
+                <textarea id="work-experience" placeholder="Enter Work Experience" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <div class="button-container">
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="show-resume" contenteditable="true">
+    </div>
+    
+    <br> <br>
+
+    <div id="shareable-link" style="display: none;">
+        <h2>Share Resume</h2>
+        <a href="#" id="share-link" target="_blank"></a>
+    </div>
+    <br>
+    <button id="download-button" class="button"><b>Download Resume</b></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
